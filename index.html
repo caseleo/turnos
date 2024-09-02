@@ -7,7 +7,7 @@
             display: inline-flex !important;
         }
 </style>
-<script src="https://app-energy-1504--sbpelaez.sandbox.my.site.com/s/lightning/lightning.out.js"></script> 
+<script src="https://app-energy-1504--sbpelaez.sandbox.my.site.com/lightning/lightning.out.js"></script> 
 
 <script>
     $Lightning.use("runtime_appointmentbooking:lightningOutGuest",
@@ -17,12 +17,12 @@
                 { },    // attributes to set on the component when created
                 "https://caseleo.github.io/turnos/",    // the DOM location to insert the component
                 function(component) {            // API name of the Flow
-                    component.startFlow("Salesforce_Scheduler_Unauthenticated");
+                    component.startFlow("PEL_Inbound_new_Guest_Appointment");
                 }
             );
-        },    'https://YourSiteDomain/SiteURL/'  // Site endpoint
+        },    'https://app-energy-1504--sbpelaez.sandbox.my.site.com'  // Site endpoint
     );
 </script>
 <div id="https://caseleo.github.io/turnos/">
 <p>Invoke the Lightning Component specified in the Script.</p>
-	  </div>
+</div>
