@@ -20,7 +20,7 @@
             $Lightning.createComponent(
                 "lightning:flow",    // top-level component of your app
                 { },    // attributes to set on the component when created
-                "https://caseleo.github.io/turnos/",    // the DOM location to insert the component
+                "lexcontainer",    // the DOM location to insert the component
                 function(component) {            // API name of the Flow
                     component.startFlow("PEL_Inbound_new_Guest_Appointment");
                 }
@@ -28,6 +28,6 @@
         },    'https://app-energy-1504--sbpelaez.sandbox.my.salesforce.com/'  // Site endpoint
     );
 </script>
-<div id="https://caseleo.github.io/turnos/">
+<div id="lexcontainer">
 <p>Invoke the Lightning Component specified in the Script.</p>
 </div>
